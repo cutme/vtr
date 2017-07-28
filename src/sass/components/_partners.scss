@@ -1,0 +1,7 @@
+.c-partners {
+	&__list {
+		
+		@extend %flex;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,145 @@
+.c-contactform {
+
+	.is-hidden {
+		display: none;
+	}
+
+	input[type=checkbox] {
+
+		& + label {
+	
+			span {
+				padding-top: 2px;
+				font: {
+					size: em(9);
+					style: italic;
+				}
+			}
+		}
+	}
+
+	&__item {
+		@extend %rel;
+		float: left;
+		width: grid(380);
+		margin-bottom: 10px;
+		margin-right: grid(73);
+
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+		
+		@media screen and ( max-width: $tablet + px ) {
+			width: 45%;
+			
+			&:nth-child(2) {
+				float: right;
+				margin-right: 0;
+			}
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			width: 100%;
+		}
+		
+		> label,
+		.c-contactform__type label {
+			@extend %antialias;
+			display: block;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			font: {
+				size: em(16);
+				weight: $bold;
+			}
+		}
+
+		&--submit {
+			width: grid(220);
+			padding-top: 26px;
+			
+			@media screen and ( max-width: $tablet + px ) {
+				width: 100%;
+				padding-top: 0;
+				
+				.o-btn {
+					width: 50%;
+				}
+			}
+			
+			
+			.o-btn {
+				width: 100%;
+				height: 60px;
+				
+				&:after {
+					width: 42px;
+				    right: -21px;
+				    height: 42px;
+				    top: 9px;
+				}
+			}
+		}
+	}
+	
+	&__switcher {
+		@extend %abs;
+		left: 0; bottom: -23px;
+		font-style: italic;
+		font-size: em(9);
+		cursor: pointer;
+		color: black;
+		
+		span {
+			display: none;
+			
+			&.email {
+				.tel & {
+					display: block;
+				}
+			}
+			
+			&.tel {
+				.email & {
+					display: block;
+				}
+			}
+		}
+	}
+	
+	&__type {
+		display: none;
+		
+		&--tel {
+
+			.tel & {
+				display: block;
+			}
+		}
+		
+		&--email {
+			.email & {
+				display: block;
+			}
+		}
+		
+	}
+	
+	.o-field {
+		//margin-bottom: 10px;
+	}
+	
+	.o-form {
+		@extend %flex;
+	    flex-wrap: wrap;
+	   // justify-content: space-between;
+	    align-items: flex-start;
+	}
+	
+	.o-header {
+		margin-bottom: 50px;
+	}
+	
+}
+
+

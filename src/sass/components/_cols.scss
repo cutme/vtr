@@ -1,0 +1,32 @@
+.c-cols {
+	@extend %clear;
+
+	&__item {
+		margin-bottom: 30px;
+
+		@media screen and ( min-width: $smartphone + 1px ) {
+			float: left;
+			width: grid(358);
+			padding-right: grid(26);
+		}
+		
+		@media screen and ( min-width: $smartphone + 1px ) and ( max-width: $tablet_portrait + px ) {
+			width: 50%;
+			
+			&:nth-child(2) {
+				padding-right: 0;
+			}
+		}
+		
+		&:last-child {
+			padding-right: 0;
+		}
+		
+		
+	}
+	
+	ul {
+		@extend %list;
+		@extend %list--blue;
+	}
+}

@@ -1,0 +1,24 @@
+.o-wrap {
+	@extend %clear;
+	@extend %wrap;	
+	max-width: $base + 240px;
+	padding: {
+		left: 120px;
+		right: 120px;
+	}
+	
+	@media screen and ( max-width: $project + px ) {
+		padding: {
+			left: grid(120);
+			right: grid(120);
+		}
+	}
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding: {
+			left: grid(40, $tablet_portrait);
+			right: grid(40, $tablet_portrait);
+		}
+	}
+}
+

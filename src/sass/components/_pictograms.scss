@@ -1,0 +1,70 @@
+.c-pictograms {
+
+	@media screen and ( min-width: $smartphone + 1px ) {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&.margin-bottom {
+		@media screen and ( min-width: $smartphone + 1px ) {
+			margin-bottom: 60px !important;
+		}
+	}
+
+	&__item {
+	
+		@media screen and ( min-width: $smartphone + 1px ) {
+			width: grid(342);		
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			margin-bottom: 40px;		
+		}
+	}
+
+	&__lead {
+		@extend %flex-x;
+		margin-bottom: 20px;
+		text-align: center;
+		
+		&.bordered {
+			
+		}
+		
+		h5 {
+			margin-bottom: 16px;
+			text-transform: uppercase;
+			font: {
+				size: em(16);
+				weight: $bold;
+			}
+				
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				min-height: 46px;
+				display: flex;
+				align-items: flex-end;
+				
+			}			
+		}
+		
+		i {
+			@extend %flex-xy;
+			width: 140px;
+			height: 140px;
+			border: 4px solid $c-black;
+			border-radius: 50%;
+			font-size: em(130);
+			margin-bottom: 16px;
+			
+			&:before {
+			}
+		}
+		
+		
+	}
+	
+	.icon-company {
+		//font-size: em(120);
+	}
+	
+}

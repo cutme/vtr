@@ -1,0 +1,135 @@
+.o-btn {
+	@extend %antialias;
+	@extend %rel;
+	@extend %anim;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	height: 44px;
+	white-space: nowrap;
+	padding: 0 30px;
+	font: {
+		family: $serif;
+		size: em(13);
+		weight: $bold;
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		span span {
+			display: none;
+		}
+	}
+	
+	@media screen and ( max-width: $smartphone_portrait + px ) {
+		height: 38px;
+		font-size: em(11);
+		
+		
+	}
+
+	&:after {
+		@extend %anim;
+	}
+
+	&--arrow {
+		padding: 0 20px 0 30px;
+		
+		@media screen and ( max-width: $smartphone_portrait + px ) {
+			padding: 0 10px 0 20px;
+		}
+		
+		span {
+			&:after {
+				padding-left: 6px;
+				content: '>>';
+			}
+		}
+		
+		&.triple {
+			span {
+				&:after {
+					content: '>>>';
+				}
+			}
+		}
+	}
+	
+	&--black {
+		background-color: $c-black;
+		color: white;
+		
+		&:after {
+			top: 7px; right: -15px; 
+			background-color: $c-black;
+			
+			@media screen and ( max-width: $smartphone_portrait + px ) {
+				top: 5px; right: -14px;
+			}
+		}
+		
+		&:hover {
+			background-color: darken($c-black, 10%);
+		
+			&:after {
+				background-color: darken($c-black, 10%);
+			}
+		}
+	}
+	
+	&--blue {
+		background-color: $c-blue--brighter;
+		
+		&:after {
+			background-color: $c-blue--brighter;
+		}
+		
+		&:hover {
+			background-color: darken($c-blue--brighter, 10%);
+		
+			&:after {
+				background-color: darken($c-blue--brighter, 10%);
+			}
+		}
+	}
+	
+	&--blueframe {
+		border: 3px solid $c-blue;
+		
+		
+		&:after {
+			top: 4px; right: -16px; 
+			background-color: white;
+			border: {
+				top: 4px solid $c-blue;
+				right: 4px solid $c-blue;
+			}
+		}
+		
+		&:hover {
+			background-color: $c-blue;
+			color: white;
+			
+			&:after {
+				background-color: $c-blue;
+			}
+		}
+	}
+	
+	&--triangle {
+		border-right: none;
+		
+		&:after {
+			@extend %abs-after;
+			width: 30px; height: 30px;			
+			transform: scaleX(.7) rotate(45deg);
+			
+			@media screen and ( max-width: $smartphone_portrait + px ) {
+				width: 27px; height: 27px;
+			}
+		}
+	}
+}
+
+button.o-btn {
+	font-size: em(15);
+}

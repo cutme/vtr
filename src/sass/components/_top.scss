@@ -1,0 +1,19 @@
+.c-top {
+	@extend %flex-y;
+	position: fixed;
+	left: 0; top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 80px;
+	background-color: $c-black;
+	padding-left: 30px;
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding-left: grid(30, $tablet_portrait);
+	}
+
+	.c-logo {
+		//@extend %abs;
+		//left: 30px;
+	}
+}

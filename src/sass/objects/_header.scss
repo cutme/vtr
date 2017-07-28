@@ -1,0 +1,49 @@
+.o-header {
+	@extend %antialias;
+	
+	&--margin {
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		line-height: 1.1;
+		margin-bottom: 30px;
+		font: {
+			size: em(30);
+			weight: $bold;
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			font-size: get-vw-smartphone(30);
+		}
+		
+		@media screen and ( max-width: $smartphone_portrait + px ) {
+			font-size: get-vw-smartphone-portrait(24);
+		}
+	}
+	
+	h4 {
+		margin-bottom: 24px;
+		font: {
+			size: em(24);
+			weight: $bold;
+		}
+	}
+	
+	h5 {
+		margin-bottom: 1em;
+		font: {
+			size: em(16);
+			weight: $heavy;
+		}
+	}
+	
+	&.bordered {
+		padding-bottom: 15px;
+		margin-bottom: 60px;
+
+		h4 {
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+@@include('./includes/head.html')
+<body>
+
+
+	@@include('./includes/top.html')
+
+
+	<div class="o-container">
+
+		<div class="c-slider">
+			<a href="#begin" class="icon-triangle o-triangle js-goto"></a>
+		
+			<div class="c-slider__content owl-carousel js-slider">
+				<div class="c-slider__item">
+					<div class="c-slider__col c-slider__col--photo owl-lazy" data-src="img/top/contact--left.jpg"></div>
+					
+					<div class="c-slider__col c-slider__col--text owl-lazy" data-src="img/top/contact--right.jpg">
+						<article>
+							<header class="o-header">
+								<h3 class="text-uppercase">
+									Skontaktuj<br> 
+									się z nami
+								</h3>
+							</header>
+							
+							<a href="#" class="o-btn o-btn--black o-btn--triangle o-btn--arrow">
+								<span>Poznaj nasze rozwiązanie</span>
+							</a>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="o-section o-section--high" id="begin">
+			<div class="o-wrap">
+
+				@@include('./includes/contactform.html')
+				
+			</div>
+		</div>
+		
+		
+		<div class="c-contactbox">
+			<div class="o-wrap text-center">
+			
+				<div class="o-header">
+					<h5>email: hello@vaterval.com</h5>
+				</div>
+				
+				<p>
+					Vaterval Technologies Sp. z o.o 
+					Aleja Księcia Józefa Poniatowskiego 1, 03-901 Warszawa<br>
+					KRS: 0000650707, NIP: 1132923883, REGON: 366012181, Kapitał zakładowy: 500.000 PLN
+				</p>
+			
+			</div>
+		</div>
+
+
+		@@include('./includes/footer.html')
+
+
+	</div>
+
+
+@@include('./includes/scripts.html')
+
+</body>
+</html>
+

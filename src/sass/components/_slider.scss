@@ -1,0 +1,139 @@
+.c-slider {
+	@extend %rel;
+
+	article {
+		width: 450px;
+		
+		@media screen and ( max-width: $tablet + px ) {
+			width: 100%;
+			padding: 40px;
+		}
+	}
+
+	.owl-dots {
+		@extend %abs-x;
+		top: 30px;
+		
+		.owl-dot  {
+			float: left;
+			width: 21px; height: 21px;
+			border: 4px solid $c-black;
+			border-radius: 50%;
+			margin: 0 5px;
+			
+			&.active {
+				border-color: white;
+			}
+		}
+	}
+
+	&__content {
+		@extend %rel;
+	}
+
+	&__col {
+		@extend %rel;
+		background: {
+			size: cover;
+			position: center;
+		}
+		
+		@media screen and ( min-width: $tablet + 1px ) {
+			.c-slider--home & {
+				height: 620px;
+			}
+		}
+
+		@media screen and ( min-width: $smartphone + 1px ) {
+			width: 50%;			
+		}
+		
+		&--photo {
+			@media screen and ( max-width: $tablet + px ) {
+				height: 520px;
+			}
+			
+			@media screen and ( max-width: $smartphone + px ) {
+				height: calc(50vh - 10px);
+			}
+		}
+
+		&--text {
+			@extend %flex-xy;
+		}		
+	}
+
+	&__item {
+		@media screen and ( min-width: $smartphone + 1px ) {
+			display: flex;
+		}
+	}
+
+	&--home {		
+		article {
+			padding: 0 40px;
+		}
+	}
+	
+	&--subsite {
+		@media screen and ( min-width: $tablet + 1px ) {
+			height: 620px;
+			
+			.c-slider__col {
+				height: 620px;
+			}
+		}
+
+		@media screen and ( min-width: $smartphone + 1px ) and ( max-width: $tablet + px ) {
+			height: 520px;
+			
+			.c-slider__col {
+				height: 520px;
+			}
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			
+			.c-slider__col--photo {
+				height: calc(50vh - 10px);
+			}
+		}
+		
+		article {
+			padding: 0 40px;
+		}
+	}
+
+	&--summary {
+	
+		article {
+			padding: 130px 0;
+			
+			@media screen and ( max-width: $tablet + px ) {
+				padding: {
+					top: get-vw-tablet-portrait(130);
+					bottom: get-vw-tablet-portrait(130);
+				}
+			}
+			
+			@media screen and ( max-width: $smartphone + px ) {
+				padding: {
+					top: get-vw-smartphone(130);
+					bottom: get-vw-smartphone(130);
+				}
+			}
+
+		}
+
+		.o-header {
+
+			h3 {
+				margin: 0;				
+			}
+		}
+		
+		p {
+			line-height: 1.5;
+		}
+	}
+}

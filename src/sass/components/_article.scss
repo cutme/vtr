@@ -1,0 +1,15 @@
+.c-article {
+	.o-header {
+		text-align: center;
+	}
+	
+	p {
+		margin-bottom: 1.6em;
+		text-align: justify;
+	}
+	
+	ul {
+		@extend %list;
+		@extend %list--black;
+	}
+}

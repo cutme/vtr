@@ -1,0 +1,12 @@
+.o-close {
+	@extend %anim-slow;
+	position: fixed;
+	right: -100%; top: 100px;
+	z-index: 100;
+	font-size: em(28);
+	cursor: pointer;
+	
+	&.is-visible {
+		right: 20px;
+	}
+}

@@ -1,0 +1,71 @@
+input {
+	@extend %anim;
+	&[type=text],
+	&[type=email],
+	&[type=tel] {
+		padding: 0 20px;
+		//height: 40px;
+		//background-color: white;
+		border: 1px solid transparent;
+
+		.has-error & {
+			border-color: $c-red !important;
+		}
+		
+		&:focus {
+			//background-color: darken($c-white--darker, 1%);
+//			border-color: $c-green;
+		}
+	}
+	
+	&.small {
+		height: 35px;
+	}
+}
+
+textarea {
+	background-color: white;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	font: {
+		size: em(13);
+		weight: $regular;
+	}
+}
+
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+
+	& + label {
+	    display: flex;
+
+		i {
+		    flex-shrink: 0;
+			height: 12px;
+			width: 12px;
+			background-color: $c-black;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+
+		span {
+			float: left;
+			padding-left: 10px;
+			vertical-align: middle;
+		}
+	}
+	
+	&:checked {
+		& + label {
+			i {
+				background-color: $c-blue--brighter;
+			}
+		}
+	}
+}
+
+
+
+
+

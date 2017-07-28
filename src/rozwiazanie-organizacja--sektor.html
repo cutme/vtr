@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+@@include('./includes/head.html')
+<body>
+
+
+	@@include('./includes/top.html')
+
+
+	<div class="o-container">
+
+		<div class="c-slider">
+			<a href="#begin" class="icon-triangle o-triangle o-triangle--black js-goto"></a>
+		
+			<div class="c-slider__content owl-carousel js-slider">
+				<div class="c-slider__item">
+					<div class="c-slider__col c-slider__col--photo owl-lazy" data-src="img/top/organization--left.jpg"></div>
+					
+					<div class="c-slider__col c-slider__col--text owl-lazy" data-src="img/top/organization--right.jpg">
+						<article>
+							<header class="o-header">
+								<h3 class="text-uppercase">
+									Twoja organizacja
+								</h3>
+							</header>
+							
+							<a href="#" class="o-btn o-btn--black o-btn--triangle o-btn--arrow">
+								<span>Poznaj nasze rozwiązanie</span>
+							</a>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		<div class="o-section o-section--high c-article" id="begin">
+			<div class="o-wrap">
+
+				<article>
+					<header class="o-header">
+						<h3 class="text-uppercase">Sektor finansowy</h3>
+					</header>
+					
+					<p>
+Rozwiązanie oferowane przez Vaterval jest stworzone zgodnie z wymaganiami branży finansowej, tym samym deklarujemy zgodność z:
+					</p>
+					
+					<ul>
+						<li>zasadami ochrony danych osobowych</li>
+						<li>przepisami VAT w zakresie archiwów elektronicznych</li>
+						<li>zasadami ochrony danych płatniczych</li>
+						<li>normą ISO:27001 w zakresie bezpieczeństwa informacyjnego</li>
+					</ul>
+
+					<p>
+						<img src="img/infographics/infografika_pl-i10.gif" alt="">
+					</p>
+				</article>
+			</div>
+		</div>
+		
+		
+		<div class="c-slider c-slider--summary">		
+			<div class="c-slider__content">
+				<div class="c-slider__col c-slider__col--text bg-blue--dark">
+					<article>
+						<header class="o-header">
+							<h3 class="text-uppercase">Oprócz wersji saas nasz system dostępny jest w wersji do zainstalowania </h3>
+						</header>
+
+						<p>
+w infrastrukturze klienta. Vaterval jest narzędziem bezpośrednio wspierającym zapewnianie zgodności z przyjętymi zasadami. Służy zarówno organizacji jak i osobom odpowiedzialnym za ład korporacyjny. 
+						</p>
+					</article>
+				</div>
+				
+				<div class="c-slider__col b-lazy" data-src="img/slides/organization--right.jpg"></div>
+			</div>
+		</div>
+
+		
+		<div class="o-section">
+			<div class="o-wrap">
+				<div class="c-pictograms">
+					
+					@@include('./includes/pictograms/compliance.html')
+					@@include('./includes/pictograms/company.html')
+					@@include('./includes/pictograms/automation.html')
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="o-section o-section--high bg-gray--brighter">
+			<div class="o-wrap">
+		
+				@@include('./includes/contactform.html')
+		
+			</div>
+		</div>
+
+
+		@@include('./includes/footer.html')
+
+	</div>
+
+
+@@include('./includes/scripts.html')
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92 42" enable-background="new 0 0 92 42" xml:space="preserve">
+<g>
+	<rect x="31.2" fill="#FFFFFF" width="29.2" height="29.5"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="45.7234" y1="15.1077" x2="45.7234" y2="43.9285" gradientTransform="matrix(1 0 0 -1 0 44)">
+		<stop  offset="0" style="stop-color:#5DC4D0"/>
+		<stop  offset="0.2953" style="stop-color:#5EC4D0;stop-opacity:0.7047"/>
+		<stop  offset="0.4659" style="stop-color:#67C6D1;stop-opacity:0.5341"/>
+		<stop  offset="0.6046" style="stop-color:#75C9D2;stop-opacity:0.3954"/>
+		<stop  offset="0.7263" style="stop-color:#88CBD3;stop-opacity:0.2737"/>
+		<stop  offset="0.8368" style="stop-color:#A1CFD5;stop-opacity:0.1632"/>
+		<stop  offset="0.9378" style="stop-color:#C2D5D8;stop-opacity:6.220000e-02"/>
+		<stop  offset="1" style="stop-color:#D8D9D8;stop-opacity:0"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_1_)" points="45.7,28.9 31.4,0.1 60.1,0.1 	"/>
+	<g>
+		<path fill="#FFFFFF" d="M5.3,42L0,32.8h2.4l3.7,6.7l3.5-6.7h2.1l-5,9.2H5.3z"/>
+		<path fill="#FFFFFF" d="M11.2,42l5.2-9.2h2.1l5.2,9.2h-2.4l-1.1-2h-5.8l-1.1,2H11.2z M15.3,38.3h4l-2-3.8L15.3,38.3z"/>
+		<path fill="#FFFFFF" d="M29.5,34.4V42h-2.1v-7.6h-4.2v-1.6h10.5v1.6H29.5z"/>
+		<path fill="#FFFFFF" d="M35,42v-9.2h9.4v1.6h-7.2v2.1h4.2V38h-4.2v2.3h7.3V42L35,42L35,42z"/>
+		<path fill="#FFFFFF" d="M47,42v-9.2h7.8c1.4,0,2.1,0.6,2.1,1.8v2.2c0,1.2-0.7,1.8-2.1,1.8h-1.2l4.2,3.5h-3l-3.7-3.5h-2V42L47,42
+			L47,42z M53.9,34.3h-4.8v2.6h4.8c0.3,0,0.6,0,0.7-0.1c0.2-0.1,0.3-0.3,0.3-0.6v-1.1c0-0.3-0.1-0.5-0.3-0.6
+			C54.5,34.4,54.2,34.3,53.9,34.3z"/>
+		<path fill="#FFFFFF" d="M63,42l-5.3-9.2h2.4l3.7,6.7l3.5-6.7h2.1l-5,9.2L63,42L63,42z"/>
+		<path fill="#FFFFFF" d="M68.9,42l5.2-9.2h2.1l5.2,9.2H79l-1.1-2h-5.8L71,42H68.9z M73,38.3h4l-2-3.8L73,38.3z"/>
+		<path fill="#FFFFFF" d="M83,42v-9.2h2.1v7.5H92V42H83z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,63 @@
+.c-footer {
+	@extend %rel;
+	background-color: #383c3e;
+	
+	@media screen and ( min-width: $smartphone + 1px ) {
+		height: 130px;
+	}
+	
+	@media screen and ( max-width: $smartphone + px ) {
+		padding: 40px 30px;
+	}
+	
+	&__copyrights {
+		text-align: center;
+		font: {
+			size: em(9);
+			weight: $thin;
+		}
+		color: #c7c7c7;
+		
+		@media screen and ( min-width: $smartphone + 1px ) {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%);
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			margin-bottom: 20px;
+			font-size: em(12);
+		}
+		
+		a {
+			color: #f5f5f5;
+		}
+	}
+	
+	&__nav {
+		text-align: right;
+		line-height: 2;
+		
+		@media screen and ( min-width: $smartphone + 1px ) {
+			position: absolute;
+			right: 50px;
+			bottom: 30px;
+		}
+
+		a {
+			display: block;
+			line-height: 1.6;
+			font-size: em(7);
+			color: #a7a9ac;
+			
+			@media screen and ( max-width: $smartphone + px ) {
+				line-height: 1.4;
+				font-size: em(12);
+			}
+			
+			&:hover {
+				color: #f5f5f5;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.o-list {
+	@extend %list;
+	
+	&--black {
+		@extend %list--black;
+	}
+	
+	&--blue {
+		@extend %list--blue;
+	}
+	
+	&--strong {
+		> li {
+			@extend %antialias;
+			text-transform: uppercase;
+			font-size: em(15);
+			font-weight: $bold;
+			margin-bottom: 20px;
+			
+			a {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	&--white {
+		@extend %list--white;
+	}
+}

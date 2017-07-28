@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+@@include('./includes/head.html')
+<body>
+
+
+	@@include('./includes/top.html')
+
+
+	<div class="o-container">
+
+		<div class="c-slider">
+			<a href="#begin" class="icon-triangle o-triangle o-triangle--black js-goto"></a>
+		
+			<div class="c-slider__content owl-carousel js-slider">
+				<div class="c-slider__item">
+					<div class="c-slider__col c-slider__col--photo owl-lazy" data-src="img/top/need--left.jpg"></div>
+					
+					<div class="c-slider__col c-slider__col--text owl-lazy" data-src="img/top/need--right.jpg">
+						<article>
+							<header class="o-header">
+								<h3 class="text-uppercase">
+									Twoje potrzeby finansowe
+								</h3>
+							</header>
+							
+							<a href="#" class="o-btn o-btn--black o-btn--triangle o-btn--arrow">
+								<span>Poznaj nasze rozwiązanie</span>
+							</a>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		<div class="o-section o-section--high c-article" id="begin">
+			<div class="o-wrap">
+
+				<article>
+					<header class="o-header">
+						<h3 class="text-uppercase">Bezpieczeństwo pracowników</h3>
+					</header>
+					
+					<p>
+Bezpieczeństwo pracowników w podróży to niezwykle ważny aspekt organizacji pracy w firmie. By to zapewnić, wraz z partnerami czuwamy nad przebiegiem podróży 24/7, a zdarzenia wyjątkowe są przez nas odpowiednio komunikowane. Nasza oferta obejmuje również ubezpieczenie pracowników w podróży.
+					</p>
+										
+					<p>
+						<img src="img/infographics/infografika_pl-i18.gif" alt="">
+					</p>
+				</article>
+			</div>
+		</div>
+		
+		
+		<div class="c-slider c-slider--summary">		
+			<div class="c-slider__content">
+				<div class="c-slider__col c-slider__col--text bg-blue--dark">
+					<article>
+						<header class="o-header">
+							<h3 class="text-uppercase">Integracja z systemami agentów business travel umożliwia informowanie<br> o sytuacjach wyjątkowych.</h3>
+						</header>
+
+						<p>
+W każdej chwili podróżujący mogą skontaktować się i omówić najlepsze rozwiązanie w nieoczekiwanej sytuacji. 
+						</p>
+					</article>
+				</div>
+				
+				<div class="c-slider__col b-lazy" data-src="img/slides/need--right.jpg"></div>
+			</div>
+		</div>
+
+		
+		<div class="o-section">
+			<div class="o-wrap">
+				<div class="c-pictograms">
+					
+					@@include('./includes/pictograms/business.html')
+					@@include('./includes/pictograms/company.html')
+					@@include('./includes/pictograms/international.html')
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="o-section o-section--high bg-gray--brighter">
+			<div class="o-wrap">
+		
+				@@include('./includes/contactform.html')
+		
+			</div>
+		</div>
+
+
+		@@include('./includes/footer.html')
+
+	</div>
+
+
+@@include('./includes/scripts.html')
+
+</body>
+</html>
+

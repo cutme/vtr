@@ -1,0 +1,28 @@
+.c-lightbox {
+	@extend %anim-slow;
+    justify-content: center;
+	position: fixed;
+	left: 0; bottom: -100%; z-index: 19;
+	width: 100%; height: calc(100% - 80px);
+	background-color: white;
+	padding: 100px 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	
+	@media screen and ( max-width: $tablet + px ) {
+		padding: get-vw-tablet(100) 0;
+	}
+	
+	@media screen and ( max-width: $tablet_portrait + px ) {
+		padding: get-vw-tablet-portrait(100) 0;
+	}
+	
+	
+	&.is-visible {
+		bottom: 0;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+	}
+}

@@ -1,0 +1,38 @@
+.c-cookies {
+	@extend %anim;
+	position: fixed;
+	left: 0; bottom: 0;
+	z-index: 60;
+	width: 100%;
+	color: black;
+	
+	&.is-hidden {
+		transform: translateY(100px);
+	}
+
+	&__info {
+		float: left;
+		font: {
+			size: em(13);
+			weight: $thin;
+		}
+	}
+	
+	&__agree {
+		float: right;
+		cursor: pointer;
+	}
+	
+	input[type=checkbox] {
+
+		& + label {
+	
+			span {
+				font: {
+					family: $serif;
+					size: em(13);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.submenu {
+	@extend %anim-slow;
+	
+	@media screen and ( min-width: $tablet_portrait + 1px ) {
+		display: flex;
+		justify-content: center;
+		position: fixed;
+		left: 0; bottom: -100%; z-index: 19;
+		width: 100%; height: calc(100% - 80px);
+		background-color: #c6d7dd;
+		padding: 100px 40px;
+	}
+	
+	@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $tablet + px ) {
+		flex-wrap: wrap;
+	}
+	
+	.is-submenu & {
+		bottom: 0;
+	}
+	
+	&__lead {
+		
+		@media screen and ( min-width: $base + 1px ) {
+	 		width: 250px;
+ 		}
+		
+		@media screen and ( min-width: $tablet + 1px ) and ( max-width: $base + px ) {
+			width: grid(250, $base);
+		}
+		
+		@media screen and ( min-width: $tablet + 1px ) {
+			margin-right: 42px;
+		}
+		
+		@media screen and ( min-width: $tablet_portrait + 1px )  and ( max-width: $tablet + px ) {
+			width: 44%;
+			
+			&:nth-child(2n + 1) {
+				margin-right: 3%;
+			}
+			
+			&:nth-child(2n + 2) {
+				margin-left: 3%;
+			}
+		}		
+		
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		> a {
+			border-bottom: 4px solid $c-black;
+			
+			font: {
+				size: em(17);
+				weight: $bold;
+			}
+			text-transform: uppercase;
+			
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				display: flex;
+				height: 60px;
+				justify-content: center;
+				align-items: flex-end;
+				margin-bottom: 20px;
+				padding-bottom: 15px;
+				text-align: center;
+			}
+	
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				display: block;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				border-bottom: 1px solid rgba( white, .5 );
+				color: white;
+				font-size: 17px;
+			}
+		}
+		
+		> ul {
+			@extend %list;
+			@extend %list--black;
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				margin-bottom: 15px;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				display: none;
+			}
+			
+			&.is-active {
+				display: block;
+			}
+			
+			li {
+				
+				@media screen and ( min-width: $tablet_portrait + 1px ) {
+					margin-bottom: 4px;
+				}
+				
+				@media screen and ( max-width: $tablet_portrait + px ) {
+					padding-left: 15px;
+
+					&:before {
+						top: 8px;
+						width: 5px; height: 5px;
+						background-color: $c-blue;
+					}
+				}
+
+				a {
+					font-size: em(15.5);
+					
+					@media screen and ( max-width: $tablet_portrait + px ) {
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						font: {
+							size: 16px;
+							weight: $bold;
+						}
+						color: white;
+					}			
+	
+					&:hover {
+						color: white;
+					}
+				}
+			}			
+
+			.is-active {
+				font-weight: $bold;
+				color: white;
+			}
+		}
+	}
+}

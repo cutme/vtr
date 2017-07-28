@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+@@include('./includes/head.html')
+<body>
+
+
+	@@include('./includes/top.html')
+
+
+	<div class="o-container">
+
+		<div class="c-slider">
+			<a href="#begin" class="icon-triangle o-triangle o-triangle--black js-goto"></a>
+		
+			<div class="c-slider__content owl-carousel js-slider">
+				<div class="c-slider__item">
+					<div class="c-slider__col c-slider__col--photo owl-lazy" data-src="img/top/erp--left.jpg"></div>
+					
+					<div class="c-slider__col c-slider__col--text owl-lazy" data-src="img/top/erp--right.jpg">
+						<article>
+							<header class="o-header">
+								<h3 class="text-uppercase">
+									Twój ERP
+								</h3>
+							</header>
+							
+							<a href="#" class="o-btn o-btn--black o-btn--triangle o-btn--arrow">
+								<span>Poznaj nasze rozwiązanie</span>
+							</a>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		<div class="o-section o-section--high c-article" id="begin">
+			<div class="o-wrap">
+
+				<article>
+					<header class="o-header">
+						<h3 class="text-uppercase">SAP</h3>
+					</header>
+					
+					<p>
+Nasi klienci używają SAP więc i my znamy to rozwiązanie. Potrafimy wymieniać dane z każdą jego wersją i każdą metodą, np.: flat file, Webservice, IDOC, itp. Znamy SAP na tyle dobrze by bezpiecznie przeprowadzać nieinwazyjnie integracje przy minimalnych kosztach. Pomimo tego, że SAP jest złożonym systemem korzystanie z naszego rozwiązania oznacza:
+					</p>
+					
+					<ul>
+<li>minimalne zaangażowanie na potrzeby integracji</li>
+<li>brak konieczności angażowania się w budowę i utrzymywanie infrastruktury</li>
+<li>niską barierę wejścia i wyjścia</li>
+<li>łatwość obsługi i utrzymania </li>
+					</ul>
+
+					
+					<p>
+						<img src="img/infographics/infografika_pl-i19.gif" alt="infografika_pl-i19">
+					</p>
+					
+				</article>
+			</div>
+		</div>
+		
+		
+		<div class="c-slider c-slider--summary">		
+			<div class="c-slider__content">
+				<div class="c-slider__col c-slider__col--text bg-blue--dark">
+					<article>
+						<header class="o-header">
+							<h3 class="text-uppercase">Posiadamy wiedzę na temat integracji z popularnymi systemami erp.</h3>
+						</header>
+						
+						<p>
+Projekty implementacyjne są krótkie i angażują klientów w minimalnym stopniu. Korzystamy z doświadczeń uznanych partnerów i starannie dobieramy technologie.
+						</p>
+					</article>
+				</div>
+				
+				<div class="c-slider__col b-lazy" data-src="img/top/erp--right.jpg"></div>
+			</div>
+		</div>
+
+		
+		<div class="o-section">
+			<div class="o-wrap">
+				<div class="c-pictograms">
+				
+					@@include('./includes/pictograms/company.html')
+					@@include('./includes/pictograms/it.html')
+					@@include('./includes/pictograms/integration.html')
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="o-section o-section--high bg-gray--brighter">
+			<div class="o-wrap">
+		
+				@@include('./includes/contactform.html')
+		
+			</div>
+		</div>
+
+
+		@@include('./includes/footer.html')
+
+	</div>
+
+
+@@include('./includes/scripts.html')
+
+</body>
+</html>
+
