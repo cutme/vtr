@@ -1,23 +1,46 @@
 .c-blocks {
-	//@extend %clear;
-	@extend %flex;
+	display: flex;
 	flex-direction: column;
-    
+    overflow: hidden;
+
 	&__col {
-		
 		@extend %rel;
-		float: left;
-		width: 50%;
+		
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			float: left;
+			width: 50%;
+		}
 		
 		img {
-			@media screen and ( min-width: $project + px ) {
+			@media screen and ( min-width: $project + 1px ) {
 				width: 100%;
 			}
 			
+			@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $project + px ) {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: auto;
+				max-width: none;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				width: 100%;
+
+			}			
 		}
 		
 		article {
 			padding: 150px 80px;
+			
+			@media screen and ( max-width: $project + px ) {
+				padding: get-vw-project(150) get-vw-project(80);
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				padding-bottom: 40px;
+			}
+			
 		}
 		
 	}
@@ -29,12 +52,36 @@
 	}
 	
 	> li {
-		@extend %flex;
+		@media screen and ( min-width: $tablet_portrait + 1px ) {
+			display: flex;
+		}
 
 		&:nth-child(even) {
-			flex-direction: row-reverse;			    
 			background-color: #212323;
 			color: white;
+			
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				flex-direction: row-reverse;
+			}			    			
+			
+			.c-blocks__col {
+				img {
+					@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $project + px ) {
+						right: 0;
+					}
+				}
+			}
+		}
+		
+		&:nth-child(odd) {
+		
+			.c-blocks__col {
+				img {
+					@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $project + px ) {
+						left: 0;
+					}
+				}
+			}
 		}
 	}
 }

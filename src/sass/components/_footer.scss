@@ -21,7 +21,8 @@
 		@media screen and ( min-width: $smartphone + 1px ) {
 			position: absolute;
 			top: 50%;
-			transform: translate(-50%);
+			transform: translateY(-50%);
+			width: 100%;
 		}
 		
 		@media screen and ( max-width: $smartphone + px ) {
