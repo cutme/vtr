@@ -82,32 +82,41 @@
 	
 	Nav.prototype.submenu = function() {
 
-		var el = $('.c-nav > ul > li > a'),
+		var el = $('.c-nav a'),
 			close = $('.js-closeLightbox');
+			//el = $('.c-nav > ul > li > a'),
 		
 		el.on('click', function(e) {
-			//e.preventDefault();
+			e.preventDefault();
 			
 			var $$ = $(this);
 			
-			/*
-if ( $$.parent().find('.submenu').length > 0 ) {
+			if (vtr.Helper.isWindowSmallerThan(769) === true) {
 			
-				if (vtr.Helper.isWindowSmallerThan(769) === false) {
-					$$.parent().toggleClass('is-submenu is-active');
-	
-					if ( $('#privacyPolicy').hasClass('is-visible') ) { } else { 
-						close.toggleClass('is-visible');
-					}
-				}
+				if ( $$.next('ul').length > 0 ) {
 				
+					$$.next('ul').toggle();
+				}
+			
+			
+				//if ( $$.parent().find('.submenu').length > 0 ) {
+				
+					//if (vtr.Helper.isWindowSmallerThan(769) === false) {
+						//$$.parent().toggleClass('is-submenu is-active');
+		
+						/*
+if ( $('#privacyPolicy').hasClass('is-visible') ) { } else { 
+							close.toggleClass('is-visible');
+						}
+*/
+					//}
+
+
 			} else {
 				el.removeClass('.is-submenu.is-active');
 				window.location = $$.attr('href');
-				
-				close.removeClass('is-visible');
 			}
-*/
+
 		});
 		
 		close.on('click', function(e) {

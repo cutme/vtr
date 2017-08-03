@@ -85,11 +85,11 @@
 				&:hover {
 					@media screen and ( min-width: $tablet_portrait + 1px ) {
 						color: $c-black;
-					}
-					
-					&:after {
-						display: block;
-					}
+						
+						&:after {
+							display: block;
+						}
+					}					
 				}
 			}
 

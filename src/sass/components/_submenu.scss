@@ -1,4 +1,6 @@
 .submenu {
+	display: none;
+
 	//@extend %anim-slow;
 	
 	@media screen and ( min-width: $tablet_portrait + 1px ) {
