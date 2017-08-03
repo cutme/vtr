@@ -77,17 +77,17 @@
 	}
 	
 	&--blue {
-		background-color: $c-blue--brighter;
+		background-color: $c-blue;
 		
 		&:after {
-			background-color: $c-blue--brighter;
+			background-color: $c-blue;
 		}
 		
 		&:hover {
-			background-color: darken($c-blue--brighter, 10%);
+			background-color: darken($c-blue, 10%);
 		
 			&:after {
-				background-color: darken($c-blue--brighter, 10%);
+				background-color: darken($c-blue, 10%);
 			}
 		}
 	}

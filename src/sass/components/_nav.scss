@@ -105,18 +105,20 @@
 			
 			&.submenu__container {
 				&:hover {
-
-					> a {
-						color: $c-black;
-	
-						&:after {
-							display: block;
-						}
-					}
 					
-					.submenu {
-						display: flex;
-						bottom: 0;
+					@media screen and ( min-width: $tablet_portrait + 1px ) {
+						> a {
+							color: $c-black;
+		
+							&:after {
+								display: block;
+							}
+						}
+						
+						.submenu {
+							display: flex;
+							bottom: 0;
+						}
 					}
 				}
 			}

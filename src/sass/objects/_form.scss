@@ -59,7 +59,7 @@ input[type=checkbox] {
 	&:checked {
 		& + label {
 			i {
-				background-color: $c-blue--brighter;
+				background-color: $c-blue;
 			}
 		}
 	}
