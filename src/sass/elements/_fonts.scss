@@ -3,6 +3,7 @@
 //@include font-face-db( "UniSans", "MyFontsWebfontsKit/webfonts/342DD2_1_0", $thin);
 @include font-face-db( "UniSans", "MyFontsWebfontsKit/webfonts/342DD2_2_0", $bold);
 @include font-face-db( "UniSans", "unisans/UniSansHeavy", $heavy);
-@include font-face-db( "UniSans", "unisans/UniSansLight", $light);
+//@include font-face-db( "UniSans", "unisans/UniSansLight", $light);
+@include font-face-db( "UniSans", "unisans/UniSansBook", $book);
 
 @include font-face-db( "icomoon", "icomoon/icomoon", $regular);
