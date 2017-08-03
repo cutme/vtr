@@ -2,8 +2,8 @@
 	@extend %rel;
 
 	article {
-		width: 450px;
-		
+		width: 520px;
+
 		@media screen and ( max-width: $tablet + px ) {
 			width: 100%;
 			padding: 40px;
@@ -17,7 +17,7 @@
 		.owl-dot  {
 			float: left;
 			width: 21px; height: 21px;
-			border: 4px solid $c-black;
+			border: 3px solid $c-black;
 			border-radius: 50%;
 			margin: 0 5px;
 			

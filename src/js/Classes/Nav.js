@@ -86,11 +86,12 @@
 			close = $('.js-closeLightbox');
 		
 		el.on('click', function(e) {
-			e.preventDefault();
+			//e.preventDefault();
 			
 			var $$ = $(this);
 			
-			if ( $$.parent().find('.submenu').length > 0 ) {
+			/*
+if ( $$.parent().find('.submenu').length > 0 ) {
 			
 				if (vtr.Helper.isWindowSmallerThan(769) === false) {
 					$$.parent().toggleClass('is-submenu is-active');
@@ -106,6 +107,7 @@
 				
 				close.removeClass('is-visible');
 			}
+*/
 		});
 		
 		close.on('click', function(e) {

@@ -9,6 +9,7 @@
 		vtr.Helper.cookies();
 		vtr.Nav.init();
 		
+		
 		if (vtr.Helper.exist('.b-lazy')) vtr.Helper.blazy();
 		if (vtr.Helper.exist('#ContactForm')) vtr.ContactForm.init();
 		
@@ -20,7 +21,7 @@
 		});
 
 		if (vtr.Helper.exist('.js-slider')) vtr.Slider.init();
-
+		if (vtr.Helper.exist('.js-show-full')) vtr.Helper.showFull();
 		
 		/*
 vtr.Helper.cookies();

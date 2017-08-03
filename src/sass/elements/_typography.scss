@@ -5,13 +5,13 @@ body {
 	font: {
 		family: $text;
 		size: #{$base-font-size}px;
-		weight: $thin;
+		weight: $light;
 	}
 	color: $c-black;
 }
 
 a {
-	@extend %anim;
+	//@extend %anim;
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
@@ -52,7 +52,7 @@ h5 {
 
 hr {
 	width: 480px;
-	height: 5px;
+	height: 4px;
 	background-color: $c-black;
 	margin-bottom: 30px;
 	

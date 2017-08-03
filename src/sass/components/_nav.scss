@@ -1,6 +1,6 @@
 .c-nav {
 	@extend %abs;
-	@extend %anim;
+	//@extend %anim;
 	right: 300px;
 	height: 100%;
 	
@@ -37,12 +37,13 @@
 			@extend %rel;
 
 			> a {
-				@extend %anim;
 				@extend %antialias;
 				@extend %rel;
 				text-transform: uppercase;
 				font-weight: $bold;
 				color: white;
+				height: 100%;
+				display: block;
 
 			    &:active,
 			    &:focus {
@@ -53,7 +54,8 @@
 					height: 100%;
 					overflow: hidden;
 					display: flex;
-				    align-items: center;
+					align-items: center;
+					height: 80px;
 				    padding: 0 20px;
 					font-size: em(12.5);
 				}
@@ -69,10 +71,11 @@
 				&:after {
 					@extend %abs-after;
 					z-index: -1;
-					left: 0; bottom: 100%;
+					left: 0; bottom: 0;
 					width: 100%;
 					height: 100%;
 					background-color: $c-gray;
+					display: none;
 					
 					@media screen and ( max-width: $tablet_portrait + px ) {
 						display: none;
@@ -85,7 +88,7 @@
 					}
 					
 					&:after {
-						bottom: 0;
+						display: block;
 					}
 				}
 			}
@@ -95,6 +98,24 @@
 					color: $c-black;
 
 					&:after {
+						bottom: 0;
+					}
+				}
+			}
+			
+			&.submenu__container {
+				&:hover {
+
+					> a {
+						color: $c-black;
+	
+						&:after {
+							display: block;
+						}
+					}
+					
+					.submenu {
+						display: flex;
 						bottom: 0;
 					}
 				}

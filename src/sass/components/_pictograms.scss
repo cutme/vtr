@@ -27,10 +27,6 @@
 		margin-bottom: 20px;
 		text-align: center;
 		
-		&.bordered {
-			
-		}
-		
 		h5 {
 			margin-bottom: 16px;
 			text-transform: uppercase;
@@ -51,7 +47,7 @@
 			@extend %flex-xy;
 			width: 140px;
 			height: 140px;
-			border: 4px solid $c-black;
+			border: 3px solid $c-black;
 			border-radius: 50%;
 			font-size: em(130);
 			margin-bottom: 16px;

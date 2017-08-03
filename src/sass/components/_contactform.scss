@@ -8,13 +8,24 @@
 
 		& + label {
 	
-			span {
+			> .text {
+				display: inline;
 				padding-top: 2px;
 				font: {
-					size: em(9);
+					size: em(11);
 					style: italic;
 				}
 			}
+		}
+	}
+	
+	&__agree {
+		> .text {
+			//font-size: em(11) !important;
+		}
+		
+		.full {
+			display: none;
 		}
 	}
 
@@ -86,7 +97,7 @@
 		@extend %abs;
 		left: 0; bottom: -23px;
 		font-style: italic;
-		font-size: em(9);
+		font-size: em(11);
 		cursor: pointer;
 		color: black;
 		
@@ -130,10 +141,10 @@
 	}
 	
 	.o-form {
-		@extend %flex;
+//		@extend %flex;
 	    flex-wrap: wrap;
 	   // justify-content: space-between;
-	    align-items: flex-start;
+//	    align-items: flex-start;
 	}
 	
 	.o-header {

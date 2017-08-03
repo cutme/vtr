@@ -9,7 +9,8 @@
         	goToTarget: goToTarget,
         	isMobile: isMobile,
         	isWindowSmallerThan: isWindowSmallerThan,
-        	mapstyle: mapstyle
+        	mapstyle: mapstyle,
+        	showFull: showFull
         };
     };
     
@@ -98,6 +99,16 @@
 	function isWindowSmallerThan(resBorder) {
         return window.innerWidth < parseInt(resBorder, 10);
     }
+	
+	function showFull() {
+		var el = $('.js-show-full');
+		
+		el.on('click', function(e) {
+			e.preventDefault();
+			
+			$(this).next('.full').show();
+		});
+	}
 	
 	vtr.Helper = new Helper();
 
