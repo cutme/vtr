@@ -15,6 +15,11 @@
 					size: em(11);
 					style: italic;
 				}
+				color: #ccc;
+				
+				a {
+					color: black;
+				}
 			}
 		}
 	}
@@ -99,7 +104,11 @@
 		font-style: italic;
 		font-size: em(11);
 		cursor: pointer;
-		color: black;
+		color: #ccc;
+		
+		i {
+			color: black;
+		}
 		
 		span {
 			display: none;
@@ -119,10 +128,9 @@
 	}
 	
 	&__type {
-		display: none;
+		display: none;		
 		
 		&--tel {
-
 			.tel & {
 				display: block;
 			}
@@ -133,6 +141,10 @@
 				display: block;
 			}
 		}
+		
+		
+		
+		
 		
 	}
 	
