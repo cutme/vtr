@@ -12,11 +12,12 @@
 		}
 		
 		img {
-			@media screen and ( min-width: $project + 1px ) {
+			@media screen and ( min-width: 1191px ) {
 				width: 100%;
+				height: auto;
 			}
 			
-			@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $project + px ) {
+			@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: 1190 + px ) {
 				position: absolute;
 				top: 0;
 				height: 100%;
@@ -33,9 +34,15 @@
 		article {
 			padding: 150px 80px;
 			
-			@media screen and ( max-width: $project + px ) {
-				padding: get-vw-project(150) get-vw-project(80);
-			}
+			//@media screen and ( min-width: $project + px ) {
+			
+			//}
+			
+			//@media screen and ( max-width: $project + px ) {
+			//	padding: get-vw-project(150) get-vw-project(80);
+			//}
+			
+			padding: get-vw-project(150) grid(80, 683);
 			
 			@media screen and ( max-width: $tablet_portrait + px ) {
 				padding-bottom: 40px;
