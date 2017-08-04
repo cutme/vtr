@@ -10,7 +10,7 @@
 	
 			> .text {
 				display: inline;
-				padding-top: 2px;
+				//padding-top: 2px;
 				font: {
 					size: em(11);
 					style: italic;
@@ -100,7 +100,7 @@
 	
 	&__switcher {
 		@extend %abs;
-		left: 0; bottom: -23px;
+		left: 0; bottom: -25px;
 		font-style: italic;
 		font-size: em(11);
 		cursor: pointer;
