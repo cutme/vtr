@@ -10,6 +10,8 @@
 		vtr.Nav.init();
 		
 		
+		if (vtr.Helper.exist('.js-openSubmenu')) vtr.Helper.openSubmenu();
+		
 		if (vtr.Helper.exist('.b-lazy')) vtr.Helper.blazy();
 		if (vtr.Helper.exist('#ContactForm')) vtr.ContactForm.init();
 		

@@ -117,8 +117,29 @@
 						
 						.submenu {
 							display: flex;
-							bottom: 0;
+							bottom: 0;							
 						}
+					}
+				}
+				
+				&.is-active {
+					> a {
+						@media screen and ( min-width: $tablet_portrait + 1px ) {
+							color: $c-black;
+							
+							&:after {
+								display: block;
+							}
+						}	
+					}
+				}
+			}
+			
+			.submenu {
+				@media screen and ( min-width: $tablet_portrait + 1px ) {
+					&.is-active {
+						display: flex;
+						bottom: 0;
 					}
 				}
 			}

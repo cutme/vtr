@@ -129,11 +129,10 @@ if ( $('#privacyPolicy').hasClass('is-visible') ) { } else {
 	
 	Nav.prototype.init = function() {
 
-	//	alert( vtr.Helper.isWindowSmallerThan(769) );
-
 		Nav.prototype.actions();
 		Nav.prototype.mobile();
 		Nav.prototype.submenu();
+
 	};
 		
 	vtr.Nav = new Nav();

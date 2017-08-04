@@ -7,6 +7,7 @@
         	exist: exist,
         	blazy: blazy,
         	goToTarget: goToTarget,
+        	openSubmenu: openSubmenu,
         	isMobile: isMobile,
         	isWindowSmallerThan: isWindowSmallerThan,
         	mapstyle: mapstyle,
@@ -99,6 +100,40 @@
 	function isWindowSmallerThan(resBorder) {
         return window.innerWidth < parseInt(resBorder, 10);
     }
+    
+    function openSubmenu() {
+
+		var el = $('.js-openSubmenu'),
+			close = $('.js-closeLightbox'),
+			submenu = $('.submenu'),
+			submenu_container = $('.submenu__container');
+		
+		el.on('click', function(e) {
+			e.preventDefault();
+			
+			if ( $(window).width() > 768 ) {
+				submenu.addClass('is-active');
+				submenu_container.addClass('is-active');
+	
+				if ( $('#privacyPolicy').hasClass('is-visible') ) { } else { 
+					close.toggleClass('is-visible');
+				}
+			}
+		});
+		
+		close.on('click', function(e) {
+			e.preventDefault();
+			
+			if ( $(window).width() > 768 ) {
+				submenu.removeClass('is-active');
+				close.removeClass('is-visible');
+				submenu_container.removeClass('is-active');
+			}
+		});
+		
+		
+		
+	}
 	
 	function showFull() {
 		var el = $('.js-show-full');
