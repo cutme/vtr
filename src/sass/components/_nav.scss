@@ -142,6 +142,12 @@
 						bottom: 0;
 					}
 				}
+				
+				@media screen and ( max-width: $tablet_portrait + px ) {
+					&.is-active {
+						display: block;
+					}
+				}
 			}
 		}
 	}	

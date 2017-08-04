@@ -1,5 +1,5 @@
 .o-close {
-	@extend %anim-slow;
+	@extend %anim;
 	position: fixed;
 	right: -100%; top: 100px;
 	z-index: 100;

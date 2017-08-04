@@ -105,7 +105,7 @@
 
 		var el = $('.js-openSubmenu'),
 			close = $('.js-closeLightbox'),
-			submenu = $('.submenu'),
+			submenu = $('.c-nav .submenu'),
 			submenu_container = $('.submenu__container');
 		
 		el.on('click', function(e) {
@@ -118,8 +118,14 @@
 				if ( $('#privacyPolicy').hasClass('is-visible') ) { } else { 
 					close.toggleClass('is-visible');
 				}
+			} else {
+
+				vtr.Nav.showMenu();
+				submenu.addClass('is-active');
 			}
 		});
+		
+		
 		
 		close.on('click', function(e) {
 			e.preventDefault();

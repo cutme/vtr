@@ -24,11 +24,11 @@ a {
     }
     
     &:after, &:before {
-	    @extend %anim;
+	    //@extend %anim;
     }
     
     i {
-	    @extend %anim;
+	    //@extend %anim;
     }
 }
 

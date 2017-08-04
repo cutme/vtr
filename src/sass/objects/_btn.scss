@@ -1,7 +1,7 @@
 .o-btn {
 	@extend %antialias;
 	@extend %rel;
-	@extend %anim;
+	//@extend %anim;
 	display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -22,13 +22,15 @@
 	
 	@media screen and ( max-width: $smartphone_portrait + px ) {
 		height: 38px;
-		font-size: em(11);
-		
-		
+		font-size: em(11);		
+	}
+	
+	i {
+		//@extend %anim;
 	}
 
 	&:after {
-		@extend %anim;
+		//@extend %anim;
 	}
 
 	&--arrow {

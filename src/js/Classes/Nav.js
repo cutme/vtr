@@ -2,7 +2,14 @@
 	'use strict';
 	
 	var Nav = vtr.Navs = function () { }, 
-		menu = $('.c-nav');
+		menu = $('.c-nav'),
+		container = $('.o-container'),
+		hamburger = $('.js-hamburger'),
+		lang = $('.js-lang'),
+		status = false,
+		subm = $('.c-nav .submenu'),
+		topbar = $('.c-top'),
+		el;
 
 	Nav.prototype.actions = function() {
 		var link = $('a', menu);		
@@ -23,61 +30,67 @@
 			}
 		});
 	};
+	
+	Nav.prototype.hideMenu = function() {
+		status = false;
+		
+		hamburger.removeClass('icon-close').addClass('icon-hamburger');
+		console.log('hide');
+		menu.removeClass('is-active');
+		
+		setTimeout(function() {
+			el = lang.detach();
+			topbar.append(el);
+			
+			el = menu.detach();
+			topbar.append(el);
+		}, 300);
+	}
+	
+	Nav.prototype.showMenu = function() {
+		status = true;
+		hamburger.toggleClass('icon-close icon-hamburger');
+		
+		el = lang.detach();
+		menu.append(el);
+		
+		el = menu.detach();
+		container.before(el);
+		
+		setTimeout(function() {
+			menu.addClass('is-active');	
+		}, 5);
+	};
 
 	Nav.prototype.mobile = function() {
 
-		var container = $('.o-container'),
-			hamburger = $('.js-hamburger'),
-			lang = $('.js-lang'),
-			status = false,
-			topbar = $('.c-top'),
-			e;
-
-		function hideMenu() {
-			status = false;
-			hamburger.toggleClass('icon-close icon-hamburger');
-			
-			menu.removeClass('is-active');
-			
-			setTimeout(function() {
-				e = lang.detach();
-				topbar.append(e);
-				
-				e = menu.detach();
-				topbar.append(e);
-			}, 300);
-		}
-
-		function showMenu() {
-			status = true;
-			hamburger.toggleClass('icon-close icon-hamburger');
-			
-			e = lang.detach();
-			menu.append(e);
-			
-			e = menu.detach();
-			container.before(e);
-			
-			setTimeout(function() {
-				menu.addClass('is-active');	
-			}, 5);
-		}
-		
 		hamburger.on('click', function(e) {
 			e.preventDefault();
 			
 			var $$ = $(this);			
 
 			if (status === false) {
-				showMenu();
+				Nav.prototype.showMenu();
 			} else {
-				hideMenu();
+				Nav.prototype.hideMenu();
 			}
 		});
 		
 		if ((vtr.Helper.isWindowSmallerThan(769) === false) && (status === true)) {
-			hideMenu();
+			Nav.prototype.hideMenu();
 		}
+		
+		$(window).on('resize', function() {
+			
+			if ( $(window).width() > 768 ) {
+			
+				subm.removeClass('is-active');
+				vtr.Nav.hideMenu();
+			
+			}
+			
+		});
+		
 	};
 	
 	Nav.prototype.submenu = function() {
@@ -94,7 +107,6 @@
 			if (vtr.Helper.isWindowSmallerThan(769) === true) {
 			
 				if ( $$.next('ul').length > 0 ) {
-				
 					$$.next('ul').toggle();
 				}
 			

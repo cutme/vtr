@@ -1,5 +1,5 @@
 .c-lightbox {
-	@extend %anim-slow;
+	@extend %anim;
     justify-content: center;
 	position: fixed;
 	left: 0; bottom: -100%; z-index: 19;
