@@ -24,14 +24,6 @@
 		height: 38px;
 		font-size: em(11);		
 	}
-	
-	i {
-		//@extend %anim;
-	}
-
-	&:after {
-		//@extend %anim;
-	}
 
 	&--arrow {
 		padding: 0 20px 0 30px;
@@ -60,12 +52,15 @@
 		background-color: $c-black;
 		color: white;
 		
-		&:after {
-			top: 7px; right: -15px; 
-			background-color: $c-black;
-			
+		&:after {			
 			@media screen and ( max-width: $smartphone_portrait + px ) {
 				top: 5px; right: -14px;
+			}
+		}
+		
+		&.o-btn--triangleFill {
+			&:after {
+				background-color: $c-black;			
 			}
 		}
 		
@@ -81,8 +76,10 @@
 	&--blue {
 		background-color: $c-blue;
 		
-		&:after {
-			background-color: $c-blue;
+		&.o-btn--triangleFill {
+			&:after {
+				background-color: $c-blue;			
+			}
 		}
 		
 		&:hover {
@@ -97,19 +94,18 @@
 	&--blueframe {
 		border: 3px solid $c-blue;
 		
-		
 		&:after {
-			top: 4px; right: -16px; 
-			background-color: white;
-			border: {
-				top: 4px solid $c-blue;
-				right: 4px solid $c-blue;
-			}
+			
+		}
+		
+		&:after,
+		&:before {
+			background-color: $c-blue;
 		}
 		
 		&:hover {
-			background-color: $c-blue;
-			color: white;
+			//background-color: $c-blue;
+			color: $c-blue;
 			
 			&:after {
 				background-color: $c-blue;
@@ -120,15 +116,40 @@
 	&--triangle {
 		border-right: none;
 		
+		&:after,
+		&:before {
+			@extend %abs-after;
+			right: -28px;
+			width: 29px;
+			height: 3px;
+		}
+	
+		&:after {
+			top: -3px;			
+			transform-origin: left;
+			transform: rotate(47deg);
+		}
+		
+		&:before {
+			bottom: -3px;
+			transform-origin: left;
+			transform: rotate(-47deg);
+		}
+	}
+	
+	&--triangleFill {
 		&:after {
 			@extend %abs-after;
-			width: 30px; height: 30px;			
+			top: 7px; right: -15px;
+			width: 30px; height: 30px;
+			background-color: $c-blue;			
 			transform: scaleX(.7) rotate(45deg);
 			
 			@media screen and ( max-width: $smartphone_portrait + px ) {
 				width: 27px; height: 27px;
 			}
 		}
+
 	}
 }
 
