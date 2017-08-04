@@ -5,7 +5,7 @@
 
 	$(document).ready(function() {
 
-		vtr.PrivacyPolicy.init();
+		vtr.Lightbox.init();
 		vtr.Helper.cookies();
 		vtr.Nav.init();
 		

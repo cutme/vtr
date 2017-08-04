@@ -35,7 +35,6 @@
 		status = false;
 		
 		hamburger.removeClass('icon-close').addClass('icon-hamburger');
-		console.log('hide');
 		menu.removeClass('is-active');
 		
 		setTimeout(function() {

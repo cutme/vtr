@@ -1,21 +1,23 @@
 (function(window, document, $, vtr, undefined) {
 	'use strict';
 	
-	var PrivacyPolicy = vtr.PrivacyPolicys = function () { };
+	var Lightbox = vtr.Lightbox = function () { };
 
-	PrivacyPolicy.prototype.init = function() {
+	Lightbox.prototype.init = function() {
 
-		var el = document.getElementById('privacyPolicy'),
-			body = document.getElementsByTagName('body'),
+		var body = document.getElementsByTagName('body'),
 			close = $('.js-closeLightbox'),
-			showPrivacyPolicy = $('.js-showPrivacyPolicy'),
-			pagePos;
+			showLightbox = $('.js-showLightbox'),
+			pagePos,
+			target;
 		
-		showPrivacyPolicy.on('click', function(e) {
+		showLightbox.on('click', function(e) {
 			e.preventDefault();
 			
+			target = $(this).attr('href');
+			
 			pagePos = $('body').scrollTop();
-			$(el).toggleClass('is-visible');
+			$(target).toggleClass('is-visible');
 			close.toggleClass('is-visible');
 			$(body).toggleClass('no-scroll');
 			
@@ -26,7 +28,7 @@
 		close.on('click', function(e) {
 			e.preventDefault();			
 			
-			$(el).removeClass('is-visible');
+			$('.c-lightbox').removeClass('is-visible');
 			close.removeClass('is-visible');
 			$(body).removeClass('no-scroll');
 			
@@ -34,7 +36,7 @@
 		});
 	};
 		
-	vtr.PrivacyPolicy = new PrivacyPolicy();
+	vtr.Lightbox = new Lightbox();
 
 }(window, document, jQuery, window.vtr = window.vtr || {}));
 
