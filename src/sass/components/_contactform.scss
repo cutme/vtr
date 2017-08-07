@@ -12,13 +12,13 @@
 				display: inline;
 				//padding-top: 2px;
 				font: {
-					size: em(11);
+					size: em(12);
 					style: italic;
 				}
-				color: #ccc;
+				//color: black;
 				
 				a {
-					color: black;
+					font-weight: $bold;
 				}
 			}
 		}
@@ -102,12 +102,13 @@
 		@extend %abs;
 		left: 0; bottom: -25px;
 		font-style: italic;
-		font-size: em(11);
+		font-size: em(12);
 		cursor: pointer;
-		color: #ccc;
+		//color: #ccc;
 		
 		i {
-			color: black;
+			font-weight: $bold;
+			//color: black;
 		}
 		
 		span {

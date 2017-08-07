@@ -41,6 +41,7 @@ input[type=checkbox] {
 	    display: flex;
 
 		i {
+			@extend %rel;
 		    flex-shrink: 0;
 			height: 12px;
 			width: 12px;
@@ -59,7 +60,15 @@ input[type=checkbox] {
 	&:checked {
 		& + label {
 			i {
-				background-color: $c-blue;
+				&:after {
+					@extend %icomoon;
+					@extend %abs;
+					left: 2px; top: 2px;
+					font-size: em(9);
+					content: "\e925";
+					color: white;
+				}
+				//background-color: $c-blue;
 			}
 		}
 	}
