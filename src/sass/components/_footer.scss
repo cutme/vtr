@@ -13,7 +13,7 @@
 	&__copyrights {
 		text-align: center;
 		font: {
-			size: em(9);
+			size: em(10);
 			weight: $book;
 		}
 		color: #c7c7c7;
@@ -48,7 +48,7 @@
 		a {
 			display: block;
 			line-height: 1.6;
-			font-size: em(9);
+			font-size: em(10);
 			color: #a7a9ac;
 			
 			@media screen and ( max-width: $smartphone + px ) {
