@@ -44,7 +44,7 @@
 			el = menu.detach();
 			topbar.append(el);
 		}, 300);
-	}
+	};
 	
 	Nav.prototype.showMenu = function() {
 		status = true;

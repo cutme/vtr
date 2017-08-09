@@ -70,7 +70,7 @@
 			page_offset = $(document).scrollTop(),
 			offset_diff = Math.abs(o - page_offset),
 			base_speed  = 500,
-			speed       = (offset_diff * base_speed) / 1000,
+			speed       = (offset_diff * base_speed) / 1000;
 			
 		offset = offset || 0;
 		

@@ -16,7 +16,7 @@
 				autoplay: true,
 				animateOut: 'fadeOut',
 				items: 1,
-				lazyLoad: true,
+				lazyLoad: false,
 				loop: true,
 				touchDrag: false
 			});
