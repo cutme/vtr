@@ -51,7 +51,7 @@
 			
 		offset = offset || 0;
 		
-		$(document).scrollTop(page_offset);
+		//$(document).scrollTop(page_offset);
 		
 
 		$viewport.animate({
