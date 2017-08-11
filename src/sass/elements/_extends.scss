@@ -139,7 +139,7 @@
 	> li {
 		@extend %rel;
 		padding-left: 20px;
-		font-size: em(15.5);
+		//font-size: em(15.5);
 
 		&:before {
 			@extend %abs-after;
