@@ -69,13 +69,14 @@
 				}
 
 				&:after {
+					@extend %anim;
 					@extend %abs-after;
 					z-index: -1;
 					left: 0; bottom: 0;
 					width: 100%;
 					height: 100%;
 					background-color: $c-gray;
-					display: none;
+					opacity: 0;
 					
 					@media screen and ( max-width: $tablet_portrait + px ) {
 						display: none;
@@ -87,7 +88,7 @@
 						color: $c-black;
 						
 						&:after {
-							display: block;
+							opacity: 1;
 						}
 					}					
 				}
@@ -103,7 +104,8 @@
 				}
 			}
 			
-			&.submenu__container {
+			&.submenu__container {				
+
 				&:hover {
 					
 					@media screen and ( min-width: $tablet_portrait + 1px ) {
@@ -111,13 +113,8 @@
 							color: $c-black;
 		
 							&:after {
-								display: block;
+								opacity: 1;
 							}
-						}
-						
-						.submenu {
-							display: flex;
-							bottom: 0;							
 						}
 					}
 				}
@@ -129,6 +126,7 @@
 							
 							&:after {
 								display: block;
+								opacity: 1;
 							}
 						}	
 					}
@@ -136,10 +134,15 @@
 			}
 			
 			.submenu {
+				@extend %anim;
+
 				@media screen and ( min-width: $tablet_portrait + 1px ) {
+					opacity: 0;
+
 					&.is-active {
 						display: flex;
 						bottom: 0;
+						opacity: 1;
 					}
 				}
 				
@@ -147,8 +150,25 @@
 					&.is-active {
 						display: block;
 					}
+					
+					&__lead {
+						ul {
+							&.is-active {
+								display: block;
+							}
+						}
+					}
 				}
+				
+				
 			}
 		}
 	}	
+}
+
+
+.submenu__lead {
+	&.is-active {
+		display: block;
+	}
 }

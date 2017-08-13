@@ -81,7 +81,6 @@
     function openSubmenu() {
 
 		var el = $('.js-openSubmenu'),
-			close = $('.js-closeLightbox'),
 			submenu = $('.c-nav .submenu'),
 			submenu_container = $('.submenu__container');
 		
@@ -91,16 +90,14 @@
 			if ( $(window).width() > 768 ) {
 				submenu.addClass('is-active');
 				submenu_container.addClass('is-active');
-	
-				if ( $('#privacyPolicy').hasClass('is-visible') ) { } else { 
-					close.toggleClass('is-visible');
-				}
+
 			} else {
 
 				vtr.Nav.showMenu();
 				submenu.addClass('is-active');
 			}
 		});
+/*
 		
 		
 		
@@ -115,6 +112,7 @@
 		});
 		
 		
+*/
 		
 	}
 	
