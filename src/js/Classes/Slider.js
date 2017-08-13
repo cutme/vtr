@@ -22,6 +22,33 @@
 			});
 		});
 	};
+	
+	Slider.prototype.partners = function() {
+
+		var el = document.getElementById('partners');
+		
+		$(el).owlCarousel({
+			autoheight: true,
+			autoplay: true,
+			lazyLoad: false,
+			loop: true,
+			touchDrag: false,
+			responsive: {
+				0: {
+					items: 2
+				},
+				480: {
+					items: 4
+				},
+				640: {
+					items: 6
+				},
+				1126: {
+					items: 9
+				}
+			}
+		});
+	};
 		
 	vtr.Slider = new Slider();
 

@@ -56,6 +56,7 @@
 		
 		@media screen and ( max-width: $smartphone + px ) {
 			width: 100%;
+			margin-bottom: 20px;
 		}
 		
 		> label,
@@ -99,12 +100,22 @@
 	}
 	
 	&__switcher {
-		@extend %abs;
-		left: 0; bottom: -25px;
-		font-style: italic;
-		font-size: em(12);
+		font: {
+			style: italic;
+			size: em(12);
+		}
 		cursor: pointer;
-		//color: #ccc;
+
+		@media screen and ( min-width: $smartphone + 1px ) {
+			position: absolute;
+			z-index: 5;
+			left: 0; bottom: -25px;
+		}
+		
+		@media screen and ( max-width: $smartphone + px ) {
+			padding-top: 5px;
+		}
+
 		
 		i {
 			font-weight: $bold;
