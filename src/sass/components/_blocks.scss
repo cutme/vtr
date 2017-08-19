@@ -12,12 +12,18 @@
 		}
 		
 		img {
-			@media screen and ( min-width: 1191px ) {
+			//@media screen and ( min-width: 1191px ) {
+			//	width: 100%;
+			//	height: auto;
+			//}
+			
+			/*
+@media screen and ( min-width: 1347px ) {
 				width: 100%;
 				height: auto;
 			}
 			
-			@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: 1190 + px ) {
+			@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: 1346px ) {
 				position: absolute;
 				top: 0;
 				height: 100%;
@@ -25,9 +31,14 @@
 				max-width: none;
 			}
 			
+*/
+			@media screen and ( min-width: $tablet_portrait + 1px ) {
+				display: none;
+			}
+			
 			@media screen and ( max-width: $tablet_portrait + px ) {
+				display: block;
 				width: 100%;
-
 			}			
 		}
 		
@@ -50,6 +61,17 @@
 			
 		}
 		
+		&--photo {
+			background: {
+				size: cover;
+				repeat: no-repeat;
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				background-image: none;
+			}
+		}
+		
 	}
 	
 	article {
@@ -67,6 +89,10 @@
 			background-color: #212323;
 			color: white;
 			
+			.c-blocks__col--photo {
+				background-position: left bottom;
+			}
+			
 			@media screen and ( min-width: $tablet_portrait + 1px ) {
 				flex-direction: row-reverse;
 			}			    			
@@ -83,6 +109,11 @@
 		&:nth-child(odd) {
 		
 			.c-blocks__col {
+			
+				&--photo {
+					background-position: right bottom;
+				}
+			
 				img {
 					@media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $project + px ) {
 						left: 0;
