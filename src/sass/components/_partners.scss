@@ -1,9 +1,12 @@
-/*
 .c-partners {
-	&__list {
-		
-		@extend %flex;
-		justify-content: center;
+	overflow: hidden;
+	height: 70px;
+
+	ul {
+		float: left;
+
+		li {			
+			display: inline-block;
+		}
 	}
 }
-*/
