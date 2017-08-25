@@ -2,6 +2,20 @@
 	@include icomoon;
 }
 
+[class^="icon2-"], [class*=" icon2-"] {
+	font-family: 'icomoon2' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .bordered {
 	border-bottom: 3px solid $c-black;
 }
