@@ -3,13 +3,24 @@
 		text-align: center;
 	}
 	
+	li {
+		line-height: 1.6;
+		letter-spacing: 1.2px;
+	}
+	
 	p {
 		margin-bottom: 1.6em;
+		line-height: 1.6;
+		letter-spacing: 1.2px;
 		text-align: justify;
 	}
+	
+	
 	
 	ul {
 		@extend %list;
 		@extend %list--black;
 	}
+	
+	
 }

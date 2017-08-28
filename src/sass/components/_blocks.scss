@@ -43,16 +43,7 @@
 		}
 		
 		article {
-			padding: 150px 80px;
-			
-			//@media screen and ( min-width: $project + px ) {
-			
-			//}
-			
-			//@media screen and ( max-width: $project + px ) {
-			//	padding: get-vw-project(150) get-vw-project(80);
-			//}
-			
+			//padding: 150px 80px;
 			padding: get-vw-project(150) grid(80, 683);
 			
 			@media screen and ( max-width: $tablet_portrait + px ) {
@@ -76,7 +67,8 @@
 	
 	article {
 		p {
-			line-height: 1.5;
+			line-height: 1.6;
+			letter-spacing: 1.2px;
 		}
 	}
 	
