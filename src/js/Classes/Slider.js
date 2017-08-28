@@ -18,6 +18,7 @@
 				items: 1,
 				lazyLoad: false,
 				loop: true,
+				mouseDrag: false,
 				touchDrag: false
 			});
 		});
