@@ -7,6 +7,13 @@
 		right: 120px;
 	}
 	
+	&--narrow {
+		padding: {
+			left: 183px;
+			right: 183px;
+		}
+	}
+	
 	@media screen and ( max-width: $project + px ) {
 		padding: {
 			left: grid(120);
@@ -20,6 +27,8 @@
 			right: grid(40, $tablet_portrait);
 		}
 	}
+	
+	
 	
 	&--nopadding {
 
