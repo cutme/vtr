@@ -151,6 +151,15 @@
 		}
 
 	}
+	
+	&--whiteframe {
+		border: 3px solid white;
+
+		&:hover {
+			color: $c-blue;
+
+		}
+	}
 }
 
 button.o-btn {

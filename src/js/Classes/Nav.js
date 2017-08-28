@@ -96,6 +96,7 @@
 		var interval,
 			isHoverInside,
 			menu_parent = $('.menu > li'),
+			close = document.querySelectorAll('.js-closeLightbox'),
 			$$ = $(this);
 
 		hoverListener = function(event) {
@@ -104,6 +105,13 @@
 		};
 
 		top.addEventListener('mousemove', hoverListener, false);
+		
+		$(close).on('click', function(e) {
+			e.preventDefault();
+			$(submenu_content).removeClass('is-active');
+			menu_parent.removeClass('is-active');
+			$(this).removeClass('is-visible');
+		});
 
 		menu_parent.on('mouseenter', function(e) {
 			e.preventDefault();
@@ -112,6 +120,7 @@
 				if ($('ul', this).length > 0) {
 					
 					$(submenu_content).addClass('is-active');
+					$(close).addClass('is-visible');
 					clearTimeout(interval);
 	
 				} 
@@ -125,6 +134,7 @@
 	
 					if ( isHoverInside === false ) {
 						$(submenu_content).removeClass('is-active');
+						$(close).removeClass('is-visible');
 						menu_parent.removeClass('is-active');
 					}
 					
