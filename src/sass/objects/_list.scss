@@ -1,7 +1,10 @@
 .o-list {
 	@extend %list;
 	
-	
+	li {
+		line-height: 1.6;
+		letter-spacing: 1.2px;
+	}
 	
 	&--black {
 		@extend %list--black;
