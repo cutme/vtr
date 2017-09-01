@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 260.7 260.7" enable-background="new 0 0 260.7 260.7" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="263.279px" height="263.279px" viewBox="-1.3 -1.3 263.279 263.279" enable-background="new -1.3 -1.3 263.279 263.279"
+	 xml:space="preserve">
 <g id="apla">
 </g>
-<g id="Layer_1">
-	<g>
-		<g>
-			<g>
-				<path fill="#231F20" d="M144.7,202.9h-26.9v-33.4h26.9V202.9z M122.9,197.9h16.9v-23.4h-16.9V197.9z"/>
-			</g>
-			<g>
-				<path fill="#231F20" d="M203.4,173.9H59.2V72.1h144.1V173.9z M64.2,168.9h134.1V77.1H64.2V168.9z"/>
-			</g>
-			<g>
-				<path fill="#231F20" d="M187.5,160.9H75.1V85.6h112.4V160.9z M80.1,155.9h102.4V90.6H80.1V155.9z"/>
-			</g>
-			<g>
-				<path fill="#231F20" d="M159.4,202.9h-56.3c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h56.3c1.4,0,2.5,1.1,2.5,2.5
-					S160.8,202.9,159.4,202.9z"/>
-			</g>
-		</g>
-	</g>
+<g>
+	<path fill="#020202" d="M130.339-1.3C57.753-1.3-1.3,57.754-1.3,130.34c0,72.587,59.053,131.64,131.639,131.64
+		c72.587,0,131.641-59.053,131.641-131.64C261.979,57.754,202.926-1.3,130.339-1.3z M130.339,254.38
+		C61.943,254.38,6.3,198.736,6.3,130.34C6.3,61.944,61.943,6.3,130.339,6.3c68.396,0,124.041,55.644,124.041,124.04
+		C254.38,198.736,198.735,254.38,130.339,254.38z"/>
+	<path fill="#020202" d="M57.934,175.181h58.625v21.435h-13.418c-2.095,0-3.8,1.704-3.8,3.8s1.705,3.8,3.8,3.8h13.418h29.469h13.414
+		c2.096,0,3.8-1.704,3.8-3.8s-1.704-3.8-3.8-3.8h-13.414v-21.435h58.626V70.799H57.934V175.181z M138.427,196.615h-14.27v-20.819
+		h14.27V196.615z M65.534,167.581V78.399h131.521v89.183H65.534z"/>
+	<path fill="#020202" d="M73.788,160.163h115.011V86.282H73.788V160.163z M181.199,93.882v58.682H81.387V93.882H181.199z"/>
 </g>
 </svg>

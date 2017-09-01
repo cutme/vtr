@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="140" height="140" version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 260.7 260.7" enable-background="new 0 0 260.7 260.7" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="263.279px" height="263.279px" viewBox="-1.3 -1.3 263.279 263.279" enable-background="new -1.3 -1.3 263.279 263.279"
+	 xml:space="preserve">
 <g id="apla">
 </g>
-<g id="Layer_1">
-	<g>
-		<path fill="#231F20" d="M162,18.4L95,58.1v179.8h67V18.4z M125,231.9v-13h8v13H125z M157,232.9h-19v-19h-18v19h-20V61l57-33.8
-			V232.9z"/>
-		<rect x="139" y="71.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="82.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="93.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="104.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="115.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="126.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="137.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="148.9" fill="#231F20" width="8" height="6"/>
-		<rect x="139" y="159.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="71.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="82.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="93.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="104.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="115.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="126.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="137.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="148.9" fill="#231F20" width="8" height="6"/>
-		<rect x="125" y="159.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="71.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="82.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="93.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="104.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="115.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="126.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="137.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="148.9" fill="#231F20" width="8" height="6"/>
-		<rect x="111" y="159.9" fill="#231F20" width="8" height="6"/>
-	</g>
+<path fill="#020202" d="M130.34-1.3C57.754-1.3-1.3,57.754-1.3,130.34c0,72.587,59.053,131.64,131.64,131.64
+	c72.587,0,131.64-59.053,131.64-131.64C261.98,57.754,202.927-1.3,130.34-1.3z M130.34,254.38C61.944,254.38,6.3,198.736,6.3,130.34
+	C6.3,61.944,61.944,6.3,130.34,6.3c68.396,0,124.04,55.644,124.04,124.04C254.38,198.736,198.736,254.38,130.34,254.38z"/>
+<path fill="#020202" d="M93.655,239.21h69.6V16.094l-69.6,41.3V239.21z M131.655,220.21v10.4h-5.4v-10.4H131.655z M118.655,212.611
+	v19h-17.4V61.721l54.4-32.279v202.169h-16.4v-19H118.655z"/>
+<g>
+	<rect x="137.655" y="161.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="161.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="161.611" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="69.61" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="69.61" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="69.61" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="81.11" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="81.11" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="81.11" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="92.61" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="92.61" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="92.61" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="104.11" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="104.11" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="104.11" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="115.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="115.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="115.611" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="127.111" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="127.111" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="127.111" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="138.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="138.611" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="138.611" fill="#020202" width="10.6" height="8.6"/>
+</g>
+<g>
+	<rect x="137.655" y="150.112" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="123.655" y="150.112" fill="#020202" width="10.6" height="8.6"/>
+	<rect x="109.655" y="150.112" fill="#020202" width="10.6" height="8.6"/>
 </g>
 </svg>
